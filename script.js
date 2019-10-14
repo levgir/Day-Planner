@@ -27,7 +27,7 @@ function timeCheck() {
 function saveEvents () {
     for (var i = 0; i < hours.length; i++) {
         var userEvents = {
-            hour: hours[i].dataset.value,
+            hour: moment().format('HH:mm:ss'),
             eventText: hours[i].value
         };
         allEvents.push(userEvents);
